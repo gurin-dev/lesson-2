@@ -1,0 +1,161 @@
+@font-face{
+    font-family: 'Noto';
+    src: url('../fonts/noto.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: Noto;
+}
+
+body::-webkit-scrollbar {width: 7px;}
+body::-webkit-scrollbar-track {background: #fff;}
+body::-webkit-scrollbar-thumb {background-color: #ed4d3c;}
+
+input:focus {
+    outline: 0;
+}
+
+.first-form, .second-form, .third-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.loginWrap, .registrationWrap, .sameWrap {
+    background: cornsilk;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.loginWrap form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+
+form label {
+    font-weight: 600;
+}
+
+.loginWrap form label sup {
+    color: #b9b9b9;
+}
+
+.loginWrap form input {
+    margin: 10px 0 20px 0;
+}
+
+.loginWrap form input[type="text"], .loginWrap form input[type="password"] {
+    font-size: 16px;
+    padding: 5px 15px;
+    border: 1px solid #b9b9b9;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.loginWrap form .buttons, .registrationWrap form .buttons, .sameWrap form .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.loginWrap form label[for=loggedin]{
+    margin-left: 10px;
+}
+
+.loginWrap form input[type="submit"], .registrationWrap form input[type="submit"], .sameWrap form input[type="submit"] {
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    background: #42b744;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.loginWrap form input[type="reset"], .registrationWrap form input[type="reset"], .sameWrap form input[type="reset"] {
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    background: #d81111;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.registrationWrap form fieldset .row, .sameWrap .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.registrationWrap form fieldset {
+    margin: 0 0 30px 0;
+}
+
+.registrationWrap form fieldset .row label {
+    padding-right: 20px;
+}
+
+.registrationWrap form fieldset legend, .registrationWrap form fieldset p, .sameWrap form fieldset legend {
+    font-size: 18px;
+    font-weight: 600;
+}  
+
+.registrationWrap form input[type="text"], .registrationWrap form input[type="password"], .registrationWrap form input[type="date"], .registrationWrap form input[type="email"], .registrationWrap form input[type="tel"], .registrationWrap form input[type="file"] {
+    width: 200px;
+}
+
+.registrationWrap form fieldset .row, .registrationWrap form fieldset .rowSettings {
+    margin: 5px 0;
+}
+
+.registrationWrap form .buttons {
+    margin-top: 20px;
+}
+
+.sameWrap form .cols {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.sameWrap fieldset {
+    margin: 20px;
+    padding: 20px;;
+}
+
+select#size {
+    width: 50px;
+}
+
+input[type="range"] {
+    width: 172px;
+    background: cornsilk;
+}
+
+input[type="number"] {
+    width: 165px;
+}
+
+select#city {
+    width: 172px;
+}
+
+
+select#dress, input#readyDate {
+    width: 172px;
+}
+
+.sameWrap form .buttons {
+    margin: 40px 20px 10px 20px
+}

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>HomeWork-2</title>
+</head>
+<body>
+    <main>
+        <div class="first-form">
+            <h2>Login Form</h2>
+            <div class="loginWrap">
+                <form>
+                    <label for="login">Login: <sup>required</sup></label>
+                    <input type="text" id="login" required autocomplete="on" autofocus maxlength="20" placeholder="Your mail or login">
+                    <label for="password">Password: <sup>required</sup></label> <input type="password" id="password" required minlength="6" autocomplete="on" placeholder="Your password">
+                    <div>
+                        <input type="checkbox" name="loggedin" id="loggedin"><label for="loggedin">Keep me logged in</label>
+                    </div>
+                    <div class="buttons">
+                        <input type="submit" value="Login">
+                        <input type="reset" value="Cancel">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="second-form">
+            <h2>Registration form</h2>
+            <div class="registrationWrap">
+                <form>
+                    <fieldset>
+                        <legend>Контактная информация</legend>
+                        <div class="row">
+                            <label for="name">Имя: </label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="row">
+                            <label for="surname">Фамилия: </label>
+                            <input type="text" id="surname">
+                        </div>
+                        <div class="row">
+                            <label for="birthday">Дата рождения: </label>
+                            <input type="date" name="" id="birthday">
+                        </div>
+                        <div class="row">
+                            <label for="avatar">Фото профиля:</label>
+                            <input type="file" id="avatar" accept=".gif, .png, .jpg, .jpeg">
+                        </div>
+                        <div class="row">
+                            <label for="login2">Логин: </label>
+                            <input type="text" id="login2" required>
+                        </div>
+                        <div class="row">
+                            <label for="mail">Эл.почта: </label>
+                            <input type="email" id="mail" required>
+                        </div>
+                        <div class="row">
+                            <label for="telephone">Телефон: </label>
+                            <input type="tel" id="telephone">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Пароль</legend>
+                        <div class="row">
+                            <label for="password2">Пароль: </label>
+                            <input type="password" id="password2" required>
+                        </div>
+                        <div class="row">
+                            <label for="passRepeat">Подтвердите пароль: </label>
+                            <input type="password" id="passRepeat"required>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Параметры</legend>
+                        <div class="rowSettings">
+                            <input type="checkbox" name="" id="sendNews">
+                            <label for="sendNews">Получать новостную рассылку</label>
+                        </div>
+                        <div class="rowSettings">
+                            <input type="checkbox" name="" id="sendNotify">
+                            <label for="sendNotify">Получать уведомления</label>
+                        </div>
+                        <p>Тема оформления: </p>
+                        <div class="row">
+                            <div>
+                                <input type="radio" name="theme" id="light">
+                                <label for="light">Светлая</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="theme" id="auto" checked>
+                                <label for="auto">Авто</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="theme" id="dark">
+                                <label for="dark">Темная</label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="rowSettings">
+                        <input type="checkbox" id="policies" required>
+                        <label for="policies">Согласен(на) с политикой сайта.</label>
+                    </div>
+                    <div class="rowSettings">
+                        <input type="checkbox" id="sendMail">
+                        <label for="sendMail">Отправить письмо с данными на мой e-mail.</label>
+                    </div>
+                    <div class="buttons">
+                        <input type="submit" value="Login">
+                        <input type="reset" value="Cancel">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="third-form">
+            <h2>Same fields form</h2>
+            <div class="sameWrap">
+                <h3>Заказ принта на одежде</h3>
+                <form>
+                    <div class="cols">
+                        <fieldset>
+                        <legend>Контактная информация</legend>
+                        <div class="row">
+                            <label for="name3">Имя: </label>
+                            <input type="text" id="name3" required>
+                        </div>
+                        <div class="row">
+                            <label for="surname3">Фамилия: </label>
+                            <input type="text" id="surname3" required>
+                        </div>
+                        <div class="row">
+                            <label for="mail3">Эл.почта: </label>
+                            <input type="email" id="mail3" required>
+                        </div>
+                        <div class="row">
+                            <label for="telephone3">Телефон: </label>
+                            <input type="tel" id="telephone3" required>
+                        </div>
+                        <div class="row">
+                            <label for="city">Город: </label>
+                            <select name="" id="city" required>
+                                <option value="kyiv">Киев</option>
+                                <option value="lviv">Львов</option>
+                                <option value="dnipro">Днепр</option>
+                                <option value="kharkiv">Харьков</option>
+                                <option value="vinnytsya">Винница</option>
+                                <option value="chernigiv">Чернигов</option>
+                                <option value="odessa">Одесса</option>
+                            </select>
+                        </div>
+                        <div class="row">
+                            <label for="delivery">Транспортная компания: </label>
+                            <select name="" id="delivery" required>
+                                <option value="novapochta">Новая Почта</option>
+                                <option value="delivery">Деливери</option>
+                                <option value="sat">SAT</option>
+                                <option value="ukrpochta">УкрПочта :(</option>
+                            </select>
+                        </div>
+                        <div class="row">
+                            <label for="department">Отделение: </label>
+                            <input type="number" id="department" min="1" max="100" required>
+                        </div>
+                        </fieldset>
+                        <fieldset>
+                        <legend>Ваш заказ</legend>
+                        <div class="row">
+                            <label for="dress">Тип одежды: </label>
+                            <select id="dress" required>
+                                <option value="futbolka">Футболка</option>
+                                <option value="svitshot">Свитшот</option>
+                                <option value="shorty">Шорты</option>
+                                <option value="shtany">Штаны</option>
+                            </select>
+                        </div>
+                        <div class="row">
+                            <label for="size">Размер: </label>
+                            <select id="size" required>
+                                <option value="xs">XS</option>
+                                <option value="s">S</option>
+                                <option value="m">M</option>
+                                <option value="l">L</option>
+                                <option value="xl">XL</option>
+                            </select>
+                            <label for="color">Цвет: </label>
+                            <input type="color" id="color" required>
+                        </div>
+                        <div class="row">
+                            <label for="picture">Печать фото: </label>
+                            <input type="file" id="picture" accept=".gif, .png, .jpg, .jpeg">
+                        </div>
+                        <div class="row">
+                            <label for="printText">Текст для печати: </label>
+                            <input type="text" id="printText">
+                        </div>
+                        <div class="row">
+                            <label for="prSize">Размер текста/фото: </label>
+                            <input type="range" id="prSize">
+                        </div>
+                        <div class="row">
+                            <label for="readyDate">Дата готовности: </label>
+                            <input type="date" id="readyDate">
+                        </div>
+                        </fieldset>
+                    </div>
+                    <fieldset>
+                        <legend>Оплата заказа</legend>
+                        <div class="row">
+                            <div>
+                                <input type="radio" name="pay" id="onDelivery">
+                                <label for="onDelivery">Наложенным платежом</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="pay" id="creditCard">
+                                <label for="creditCard">Оплата на карту</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="pay" id="byBank">
+                                <label for="byBank">Банковский перевод</label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="buttons">
+                        <input type="submit" value="Заказать">
+                        <input type="reset" value="Отмена">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
